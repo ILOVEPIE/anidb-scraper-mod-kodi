@@ -2,7 +2,7 @@
 <scraper framework="1.1" date="2011-04-18">
 
   <CreateSearchUrl clearbuffers="no" dest="4">  
-    <RegExp conditional="Google" input="$$4" output="&lt;url gzip=&quot;yes&quot;&gt;http://www.google.com/search?q=site:anidb.net\1&amp;filter=0&lt;/url&gt;" dest="4">
+    <RegExp conditional="Google" input="$$4" output="&lt;url gzip=&quot;yes&quot;&gt;https://www.googleapis.com/customsearch/v1?q=\1&amp;filter=0&amp;key=$INFO[GoogleSearchKey]&amp;cx=009801826931308235275%3Abudwr80sd2s&amp;alt=atom&lt;/url&gt;" dest="4">
       <RegExp input="$$1%20$$2" output="+\1" dest="4">
         <expression clear="yes" repeat="yes">(?i)(?:%[a-f0-9]{2}|[!.()-])*([a-z0-9]+)?</expression>
       </RegExp>

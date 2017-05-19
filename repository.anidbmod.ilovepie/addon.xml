@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="repository.anidbmod.ilovepie"
+       name="Anidb Scraper Mod Addon Repository"
+       version="1.0.0"
+       provider-name="ILOVEPIE">
+  <extension point="xbmc.addon.repository" 
+             name="Anidb Scraper Mod Addon Repository">
+    <info compressed="false">https://raw.githubusercontent.com/ILOVEPIE/anidb-scraper-mod-kodi/master/addons.xml</info>
+    <checksum>https://raw.githubusercontent.com/ILOVEPIE/anidb-scraper-mod-kodi/master/addons.xml.md5</checksum>
+    <datadir zip="true">https://raw.githubusercontent.com/ILOVEPIE/anidb-scraper-mod-kodi/master/repo/</datadir>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>Anidb Scraper Mod for Kodi Repository</summary>
+    <description>Anidb Scraper Mod for Kodi as maintained by ILOVEPIE</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+

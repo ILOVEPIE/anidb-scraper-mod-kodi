@@ -1,15 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="metadata.common.anidb.net"
+<addon id="metadata.common.anidb.net.mod"
        name="AniDB.net [MOD] common scraper functions"
-       version="1.2.0"
-       provider-name="scudlee">
+       version="1.2.1"
+       provider-name="ILOVEPIE">
   <requires>
     <import addon="xbmc.metadata" version="2.1.0"/>
   </requires>
   <extension point="xbmc.metadata.scraper.library"
              library="anidb.xml"
              cachepersistence="48:00"/>
+  <extension point="xbmc.python.library"
+			 library="guitools.py"/>
   <extension point="xbmc.addon.metadata">
     <summary lang="en">AniDB.net [MOD] scraper library</summary>
     <description lang="en">Download anime show information from AniDB.net</description>
@@ -19,11 +21,11 @@
 
 <addon id="metadata.movies.anidb.net.mod"
        name="AniDB.net [MOD]"
-       version="2.2.0"
-       provider-name="scudlee">
+       version="2.2.1"
+       provider-name="ILOVEPIE">
   <requires>
     <import addon="xbmc.metadata" version="2.1.0"/>
-    <import addon="metadata.common.anidb.net" version="1.0.0"/>
+    <import addon="metadata.common.anidb.net.mod" version="1.2.1"/>
     <import addon="metadata.common.themoviedb.org" version="2.9.0"/>
     <import addon="plugin.video.youtube" version="4.0.0" optional="true"/>
   </requires>
@@ -40,11 +42,11 @@
 
 <addon id="metadata.tvshows.anidb.net.mod"
        name="AniDB.net [MOD]"
-       version="2.4.0"
-       provider-name="scudlee">
+       version="2.4.1"
+       provider-name="ILOVEPIE">
   <requires>
     <import addon="xbmc.metadata" version="2.1.0"/>
-    <import addon="metadata.common.anidb.net" version="1.0.0"/>
+    <import addon="metadata.common.anidb.net.mod" version="1.2.1"/>
   </requires>
   <extension point="xbmc.metadata.scraper.tvshows"
              language="en"
@@ -57,19 +59,19 @@
   </extension>
 </addon>
 
-<addon id="repository.scudlee"
-       name="ScudLee's XBMC Addon Repository"
+<addon id="repository.anidbmod.ilovepie"
+       name="Anidb Scraper Mod Addon Repository"
        version="1.0.0"
-       provider-name="scudlee">
+       provider-name="ILOVEPIE">
   <extension point="xbmc.addon.repository"
-             name="ScudLee's XBMC Addon Repository">
-    <info compressed="false">https://github.com/ScudLee/scudlee-xbmc-addons/raw/master/addons.xml</info>
-    <checksum>https://github.com/ScudLee/scudlee-xbmc-addons/raw/master/addons.xml.md5</checksum>
-    <datadir zip="true">https://github.com/ScudLee/scudlee-xbmc-addons/raw/master/repo/</datadir>
+             name="Anidb Scraper Mod Addon Repository">
+    <info compressed="false">https://raw.githubusercontent.com/ILOVEPIE/anidb-scraper-mod-kodi/master/addons.xml</info>
+    <checksum>https://raw.githubusercontent.com/ILOVEPIE/anidb-scraper-mod-kodi/master/addons.xml.md5</checksum>
+    <datadir zip="true">https://raw.githubusercontent.com/ILOVEPIE/anidb-scraper-mod-kodi/master/repo/</datadir>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <summary>Add-ons from ScudLee's Repository</summary>
-    <description>AniDB.net scraper mods for XBMC</description>
+    <summary>Anidb Scraper Mod for Kodi Repository</summary>
+    <description>Anidb Scraper Mod for Kodi as maintained by ILOVEPIE</description>
     <platform>all</platform>
   </extension>
 </addon>

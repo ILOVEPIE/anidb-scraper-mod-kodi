@@ -10,10 +10,10 @@
     <RegExp input="$$4" output="&lt;results&gt;\1&lt;/results&gt;" dest="4">
       <RegExp conditional="Google" input="$$4" output="\1" dest="4">
         <RegExp conditional="Google" input="$$1" output="&lt;chain function=&quot;GetGoogleResultsByID&quot;&gt;\1&lt;/chain&gt;" dest="4">
-          <expression clear="yes" repeat="yes">(?i)&lt;cite&gt;anidb\.net/perl-bin/animedb\.pl\?show=anime&amp;amp;aid=(\d+)&lt;/cite&gt;</expression>
+          <expression clear="yes" repeat="yes">(?i)&lt;id&gt;(?:https?\://)?(?:www\.)?anidb\.net/perl-bin/animedb\.pl\?show=anime&amp;aid=(\d+)&lt;/id&gt;</expression>
         </RegExp>
         <RegExp conditional="Google" input="$$1" output="&lt;chain function=&quot;GetGoogleResultsByID&quot;&gt;\1&lt;/chain&gt;" dest="4+">
-          <expression repeat="yes">(?i)&lt;cite&gt;anidb\.net/a(\d+)&lt;/cite&gt;</expression>
+          <expression repeat="yes">(?i)&lt;id&gt;(?:https?\://)?(?:www\.)?anidb\.net/a(\d+)&lt;/id&gt;</expression>
         </RegExp>
         <expression noclean="1"/>
       </RegExp> 

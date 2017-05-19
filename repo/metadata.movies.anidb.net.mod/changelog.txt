@@ -1,3 +1,6 @@
+2.2.1
+Fixed: Google blocking search requests.
+
 2.2.0
 Fixed: Genre parsing
 Fixed: Minor plot handling fixes

@@ -8,6 +8,8 @@
   <string id="30004">Personal anime mapping URL</string>
   <string id="30005">Store anime ID from</string>
   <string id="30006">Delay Parameter</string>
+  <string id="30007">Google Search Key</string>
+  <string id="30008">Navigate to &quot;https://goo.gl/OhWDhv&quot; and click the button labeled "Get A Key" and create a new project called "Kodi API". Type in the resulting key on the next screen.</string>
   <!-- AniDB -->
   <string id="30100">Use official name instead of main name</string>
   <string id="30101">Official name language</string>
@@ -38,4 +40,6 @@
   <string id="30200">Enable fanarts</string>
   <string id="30202">Continue lookup if no fanart found</string>
   <string id="30203">Enable extra episode details</string>
+  <!-- Errors -->
+  <string id="30300">Error Attempting to perform GUI utility function:</string>
 </strings>
